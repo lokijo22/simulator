@@ -2,13 +2,24 @@ package main
 
 import (
 	"fmt"
+	"simulator/environment"
 	"simulator/particles"
 )
 
 func main() {
-	// Generate Randomized Particle
-	particle := particles.Particle2D_32f{}
-	particle.Randomize()
+	space := environment.Space2_f64{}
+	var quantity int = 10
 
-	fmt.Printf("Particle (%d bytes)\nPosition: %f\nVelocity: %f\nMass: %f", particle.Sizeof(), particle.Position.Data, particle.Velocity.Data, particle.Mass)
+	for i := 0; i < quantity; i++ {
+		particle := particles.Particle2D_64f{}
+		particle.Randomize()
+
+		space.AddParticle(particle)
+		fmt.Printf("Particle -  Position:%f \n", particle.Position.Data)
+	}
+
+	for i := 0; i < space.Size; i++ {
+		x, y := space.GetPoint(i)
+		fmt.Printf("Item %d: %f %f\n", i, x, y)
+	}
 }
