@@ -2,7 +2,7 @@ package environment
 
 import "simulator/particles"
 
-// Space which accepts floats
+// Space classes deal with coordinate logic
 type Space2_f32 struct {
 	Points []float32
 	Size   int
