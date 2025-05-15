@@ -25,5 +25,5 @@ func main() {
 		fmt.Printf("Item %d: %f %f\n", i, x, y)
 	}
 
-	user.GetCommand()
+	user.CommandLineInterface()
 }

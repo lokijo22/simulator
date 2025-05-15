@@ -1,4 +1,4 @@
-package vectors
+package data
 
 type Vector_64f struct {
 	Size int
