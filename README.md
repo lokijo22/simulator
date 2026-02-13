@@ -12,7 +12,7 @@ This project is currently being rebuilt from the ground up with a focus on perfo
 
 ## Project Status
 
-This project is under active development. Core systems are being redesigned and implemented incrementally.
+This project is under semi-active development. Core systems are being redesigned and implemented incrementally.
 
 ## Getting Started
 
